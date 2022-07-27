@@ -1,3 +1,11 @@
+packer {
+  required_plugins {
+    amazon = {
+      version = ">= 0.0.2"
+      source  = "github.com/hashicorp/amazon"
+    }
+  }
+}
 #create source for which image has to be built
 source "amazon-ebs" "packprac" {
   ami_name      = "learn-packer-linux-aws"
