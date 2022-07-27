@@ -8,7 +8,7 @@ packer {
 }
 #create source for which image has to be built
 source "amazon-ebs" "packprac" {
-  ami_name      = "learn-packer-linux-aws"
+  ami_name      = "learn-packer-linux-aws-pract2"
   instance_type = "t2.micro"
   region        = "us-east-1"
   source_ami_filter {
